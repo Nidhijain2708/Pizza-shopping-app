@@ -1,0 +1,44 @@
+/* *{
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+.brand{
+    height: 35px;
+    background: url('https://www.pizzahut.co.in/order/images/logos/logo_wide@x2.38f9109e24d22d58d048837b27f54390.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0px 10px;
+    margin: 8px 15px !important;
+}
+.navbar{
+    /* border: 1px solid rgb(203, 202, 202); */
+    width: 100%;
+    padding: 10px 10px !important;
+}
+.nav-item{
+    border: 1px solid rgb(203, 202, 202);
+    height: 100%;
+    padding: 2px 15px !important;
+}
+.nav-link{
+    color: black !important;
+    font-size: 20px !important;
+}
+
+@media (max-height: 1200px){
+    .basket{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.cart{
+    position: fixed;
+    top: 0px;
+}
+
+.yourBasket{
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 35px;
+}
