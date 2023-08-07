@@ -45,18 +45,15 @@ function printBasket(){
 
 function prepareCard(pizza){
     const pizzaDiv=document.querySelector('.pizzas');
-    const cardDivOuter=document.createElement('div');
-    cardDivOuter.classList.add('col-4');
-    const cardDivInner=document.createElement('div');
-    cardDivInner.classList.add('card');
-    cardDivOuter.appendChild(cardDivInner);
+    const cardDiv=document.createElement('div');
+    cardDiv.classList.add('col-4','card');
     const Productimage=document.createElement('img');
     Productimage.setAttribute('src',pizza.url);
     Productimage.classList.add('card-img-top');
-    cardDivInner.appendChild(Productimage);
+    cardDiv.appendChild(Productimage);
     const cardBody=document.createElement('div');
-    cardDivInner.classList.add('card-body');
-    cardDivInner.appendChild(cardBody);
+    cardDiv.classList.add('card-body');
+    cardDiv.appendChild(cardBody);
     const cardHead=document.createElement('h5');
     cardHead.classList.add('card-title');
     cardHead.innerText=pizza.name;
@@ -71,5 +68,5 @@ function prepareCard(pizza){
     cardButton.addEventListener('click',addToCart);
     cardButton.innerText='Add To Cart';
     cardBody.appendChild(cardButton);
-    pizzaDiv.appendChild(cardDivOuter);
+    pizzaDiv.appendChild(cardDiv);
 }
